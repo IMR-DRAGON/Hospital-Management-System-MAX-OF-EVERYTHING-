@@ -1,0 +1,472 @@
+/*
+ * HMS Global Interactive States
+ * Comprehensive hover and active states for all buttons and interactive elements
+ */
+
+/* ===========================================
+   BUTTON HOVER & ACTIVE STATES
+   =========================================== */
+
+/* Primary Buttons */
+.btn-primary {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary:hover {
+    /* Keep visual feedback without moving the button */
+    transform: none;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-primary:active {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Secondary Buttons */
+.btn-secondary {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-secondary:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(108, 117, 125, 0.3);
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+
+.btn-secondary:active {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.4);
+}
+
+/* Success Buttons */
+.btn-success {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-success:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+.btn-success:active {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* Danger Buttons */
+.btn-danger {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-danger:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(220, 53, 69, 0.3);
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-danger:active {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+}
+
+/* Warning Buttons */
+.btn-warning {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-warning:hover {
+.btn-warning:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-warning:active {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+}
+
+/* Info Buttons */
+.btn-info {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-info:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(23, 162, 184, 0.3);
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn-info:active {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(23, 162, 184, 0.4);
+}
+
+/* Light Buttons */
+.btn-light {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-light:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(248, 249, 250, 0.3);
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+.btn-light:active {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(248, 249, 250, 0.4);
+}
+
+/* Dark Buttons */
+.btn-dark {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-dark:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(52, 58, 64, 0.3);
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+.btn-dark:active {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(52, 58, 64, 0.4);
+}
+
+/* ===========================================
+   OUTLINE BUTTONS
+   =========================================== */
+
+.btn-outline-primary:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.btn-outline-secondary:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(108, 117, 125, 0.3);
+}
+
+.btn-outline-success:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+}
+
+.btn-outline-danger:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(220, 53, 69, 0.3);
+}
+
+.btn-outline-warning:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+}
+
+.btn-outline-info:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(23, 162, 184, 0.3);
+}
+
+.btn-outline-light:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(248, 249, 250, 0.3);
+}
+
+.btn-outline-dark:hover {
+    transform: none;
+    box-shadow: 0 8px 25px rgba(52, 58, 64, 0.3);
+}
+
+/* ===========================================
+   NAVIGATION & MENU ITEMS
+   =========================================== */
+
+/* Sidebar Menu Items */
+.sidebar-menu ul li a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.sidebar-menu ul li a:hover {
+    transform: none;
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+}
+
+.sidebar-menu ul li a:active {
+    transform: none;
+    background-color: rgba(0, 123, 255, 0.2);
+}
+
+/* Header Navigation */
+.nav-link {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover {
+    transform: none;
+    color: #007bff;
+}
+
+.nav-link:active {
+    transform: none;
+}
+
+/* ===========================================
+   CARDS & PANELS
+   =========================================== */
+
+.card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    /* Keep shadow only; no movement */
+    transform: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card:active {
+    transform: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Headers */
+.card-header {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card-header {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* ===========================================
+   FORM ELEMENTS
+   =========================================== */
+
+/* Form Controls */
+.form-control {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-control:focus {
+    /* Focus glow without scaling the field */
+    transform: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-control:hover {
+    border-color: #007bff;
+}
+
+/* Form Groups */
+.form-group {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-group:hover {
+    transform: none;
+}
+
+/* ===========================================
+   TABLES
+   =========================================== */
+
+/* Table Rows */
+.table tbody tr {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.table tbody tr:hover {
+    /* Row highlight without scaling or extra shadow */
+    transform: none;
+    box-shadow: none;
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+.table tbody tr:active {
+    transform: none;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Table Cells */
+.table td {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.table tbody tr:hover td {
+    border-color: rgba(0, 123, 255, 0.2);
+}
+
+/* ===========================================
+   MODALS
+   =========================================== */
+
+/* Modal Buttons */
+.modal-footer .btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-footer .btn:hover {
+    transform: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-footer .btn:active {
+    transform: none;
+}
+
+/* ===========================================
+   BADGES & LABELS
+   =========================================== */
+
+.badge {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.badge:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================================
+   DROPDOWN MENUS
+   =========================================== */
+
+.dropdown-item {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown-item:hover {
+    transform: none;
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+}
+
+.dropdown-item:active {
+    transform: none;
+    background-color: rgba(0, 123, 255, 0.2);
+}
+
+/* ===========================================
+   PAGINATION
+   =========================================== */
+
+.page-link {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-link:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.page-link:active {
+    transform: none;
+}
+
+/* ===========================================
+   ALERTS
+   =========================================== */
+
+.alert {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.alert:hover {
+    transform: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================================
+   PROGRESS BARS
+   =========================================== */
+
+.progress {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================================
+   CUSTOM INTERACTIVE ELEMENTS
+   =========================================== */
+
+/* Any element with .interactive class */
+.interactive {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.interactive:hover {
+    transform: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.interactive:active {
+    transform: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================================
+   RESPONSIVE CONSIDERATIONS
+   =========================================== */
+
+@media (max-width: 768px) {
+    .btn:hover {
+        transform: none;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+    
+    .table tbody tr:hover {
+        transform: none;
+    }
+}
+
+/* ===========================================
+   ACCESSIBILITY IMPROVEMENTS
+   =========================================== */
+
+/* Focus states for keyboard navigation */
+.btn:focus,
+.form-control:focus,
+.nav-link:focus,
+.dropdown-item:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        transform: none !important;
+    }
+}
