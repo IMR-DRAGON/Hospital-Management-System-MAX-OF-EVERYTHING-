@@ -1,4 +1,5 @@
-<?php 
+<?php
+require_once __DIR__ . '/includes/init.php';
 if(empty($_SESSION['name']))
 {
     header('Location: ' . hms_url('login.php'));

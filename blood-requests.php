@@ -45,6 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['create_request'])) {
 
 // Handle Fulfilling a Request
 if (isset($_GET['fulfill'])) {
+    if (!isset($_SESSION['role']) || $_SESSION['role'] != 1) {
+        $_SESSION['error_message'] = "Only administrators can process or fulfill blood requests.";
+        header('Location: ' . hms_url('modules/shared/blood-requests.php'));
+        exit();
+    }
     $request_id = (int)$_GET['fulfill'];
     $blood_type = mysqli_real_escape_string($connection, $_GET['type']);
     $units_required = (int)$_GET['units'];
@@ -154,13 +159,13 @@ $patients_result = mysqli_query($connection, $patients_query);
                                             ?>
                                         </td>
                                         <td class="text-right">
-                                            <?php if ($row['status'] == 'Pending'): ?>
-                                                <a href="<?php echo hms_url('modules/shared/blood-requests.php'); ?>"?fulfill=<?php echo $row['id']; ?>&type=<?php echo $row['blood_group']; ?>&units=<?php echo $row['quantity']; ?>" 
+                                            <?php if ($row['status'] == 'Pending' && isset($_SESSION['role']) && $_SESSION['role'] == 1): ?>
+                                                <a href="<?php echo hms_url('modules/shared/blood-requests.php'); ?>?fulfill=<?php echo $row['id']; ?>&type=<?php echo $row['blood_group']; ?>&units=<?php echo $row['quantity']; ?>" 
                                                    class="btn btn-sm btn-success" 
                                                    onclick="return confirm('This will deduct from inventory. Are you sure?');">
                                                    <i class="fa fa-check"></i> Fulfill
                                                 </a>
-                                            <?php endif; ?>
+                                            <?php elseif ($row['status'] == 'Pending'): ?> <span class="badge badge-secondary">Pending Action</span> <?php endif; ?>
                                         </td>
                                     </tr>
                                     <?php endwhile; ?>

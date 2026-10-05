@@ -185,7 +185,9 @@ if (!$full_inventory_result) {
                                                     <span class="badge badge-info"><?php echo htmlspecialchars($row['units_required']); ?> Units</span>
                                                     <small class="text-muted d-block"><?php echo date('d M Y H:i', strtotime($row['created_at']));?></small> 
                                                 </div>
-                                                <a href="<?php echo hms_url('modules/shared/blood-requests.php'); ?>"?req_id=<?php echo $row['request_id']; ?>" class="btn btn-sm btn-warning">Process</a>
+                                                <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 1): ?>
+                                                    <a href="<?php echo hms_url('modules/shared/blood-requests.php'); ?>?fulfill=<?php echo $row['request_id']; ?>&type=<?php echo urlencode($row['required_blood_type']); ?>&units=<?php echo $row['units_required']; ?>" class="btn btn-sm btn-warning">Process</a>
+                                                <?php endif; ?>
                                             </li>
                                         <?php endwhile; ?>
                                     </ul>
